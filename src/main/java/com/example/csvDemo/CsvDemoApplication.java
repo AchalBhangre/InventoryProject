@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories(basePackages="repository")
-@ComponentScan(basePackages = {"controller","Service","repository"})
-@EntityScan(basePackages = "controller")
+@ComponentScan(basePackages = {"controller","Service","repository","dao"})
+@EntityScan(basePackages = {"controller","dao"})
 public class CsvDemoApplication {
 
 	public static void main(String[] args) {

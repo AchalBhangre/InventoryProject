@@ -2,12 +2,13 @@ package repository;
 
 import org.springframework.stereotype.Repository;
 
-import controller.Book;
+
+import dao.Finance;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
 @Repository
-public interface FinanceOpRepository extends JpaRepository<Book, Integer>{
+public interface FinanceOpRepository extends JpaRepository<Finance, Integer>{
 
 }
